@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Media Ajar Generator — by Evegrow Digital</title>
+  <link rel="icon" href="https://i.ibb.co.com/BHQvvZNP/Welcome-1024-x-1024-piksel-20261018-204041-0000.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/" aria-label="Media Ajar Generator, kembali ke beranda">
+      <img class="brand-logo" src="https://i.ibb.co.com/BHQvvZNP/Welcome-1024-x-1024-piksel-20261018-204041-0000.png" alt="Logo Evegrow Digital" width="48" height="48"
+           onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'brand-logo fallback',textContent:'E'}))">
+      <span class="brand-text">
+        <strong>Media Ajar Generator</strong>
+        <small>by Evegrow Digital</small>
+      </span>
+    </a>
+  </header>
+
+  <main>
+    <section id="view-home">
+      <div class="hero">
+        <h1>Buat prompt media ajar interaktif, siap tempel ke AI</h1>
+        <p>Pilih jenis media, isi materinya, dan dapatkan prompt lengkap beserta panduan memakainya di Gemini, Canva Code, Claude, atau ChatGPT.</p>
+      </div>
+      <div id="media-grid" class="media-grid" aria-label="Pilihan media ajar"></div>
+    </section>
+
+    <section id="view-form" hidden>
+      <div id="form-root"></div>
+    </section>
+  </main>
+
+  <footer class="foot">Media Ajar Generator · by Evegrow Digital</footer>
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/config.js"></script>
+  <script src="data/manifest.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

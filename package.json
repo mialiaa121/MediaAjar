@@ -1,0 +1,9 @@
+{
+  "name": "media-ajar-generator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Media Ajar Generator by Evegrow Digital",
+  "scripts": {
+    "build": "node build-manifest.js"
+  }
+}
