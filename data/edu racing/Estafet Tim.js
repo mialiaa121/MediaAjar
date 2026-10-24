@@ -1,0 +1,25 @@
+MediaAjar.register({
+  title: 'Estafet Tim',
+  description: 'Tim bergantian membalap dan menjawab soal.',
+  order: 8,
+  prompt: `Kamu adalah pengembang game edukasi sekaligus desainer pembelajaran yang berpengalaman. Buatkan game balapan edukasi untuk babak "Estafet Tim" berdasarkan data berikut:
+
+[INPUT]
+
+Mekanik permainan yang harus diterapkan:
+1. Dua hingga empat tim berlomba di lintasan estafet; tiap tim berisi 3–5 anggota yang bergiliran, dan satu anggota menjawab soal pada tiap etape.
+2. Etape selesai setelah jumlah jawaban benar tertentu, lalu anggota berikutnya menerima tongkat estafet lewat animasi serah-terima.
+3. Layar pembuka memungkinkan mengetik nama tiap anggota agar semua siswa terlibat; soal tiap anggota berbeda untuk mencegah menyalin.
+4. Hasil menampilkan peringkat tim dan kontribusi tiap anggota.
+
+Ketentuan umum:
+- Seluruh visual, efek suara, dan istilah (kendaraan/pembalap, lintasan, finis) mengikuti Tema Balapan yang dipilih di atas.
+- Jawaban benar membuat pembalap melaju lebih cepat; jawaban salah memperlambat sebentar dan tidak pernah membuat pemain tersingkir.
+- Isi soal/konten harus sesuai jenjang, kelas, mata pelajaran, topik, tingkat kesulitan, dan bahan ajar di atas; bahasa mudah dipahami, tidak berulang, dan urutan serta posisi jawaban diacak setiap kali main.
+- Jika bahan ajar diberikan, jadikan itu sumber utama isi; jika tidak ada, susun isi dari topik sesuai Kurikulum Merdeka dan pastikan faktanya akurat.
+- Jawaban salah selalu diikuti jawaban yang benar beserta penjelasan singkat (1–2 kalimat) agar pemain belajar, bukan sekadar kalah.
+- Terapkan Gaya Visual, Jumlah Soal, dan Fitur Tambahan sesuai data di atas. Bila Narasi bersuara dipilih, gunakan Web Speech API berbahasa Indonesia dengan tombol aktif/nonaktif; bila Bintang, Level, atau Rapor dipilih, tampilkan sesuai deskripsinya.
+- Susun layar menjadi: pembuka (judul, petunjuk singkat, tombol Mulai) → bermain → hasil (skor, ringkasan capaian, tombol Main Lagi).
+- Tampilan responsif untuk HP dan proyektor kelas: tombol besar, teks terbaca jelas, kontras baik, dan dapat dimainkan dengan sentuhan maupun mouse/keyboard.
+- Semua aset visual dibuat sendiri lewat kode (SVG/CSS/emoji); jangan memakai gambar atau karakter berhak cipta, dan jangan memuat unsur kekerasan grafis.`
+});
