@@ -1,15 +1,25 @@
 MediaAjar.register({
   title: 'Menara Penyelamat',
-  description: 'Naik menara untuk menyelamatkan tokoh: setiap jawaban benar membuka satu anak tangga.',
+  description: 'Naik menara untuk menyelamatkan tokoh.',
   order: 1,
-  prompt: `Kamu adalah pengembang game edukasi sekaligus desainer pembelajaran yang berpengalaman. Buatkan game misi "Menara Penyelamat" berdasarkan data berikut:
+  prompt: `Kamu adalah pengembang game edukasi sekaligus desainer pembelajaran yang berpengalaman. Buatkan game misi edukasi bertema "Menara Penyelamat" berdasarkan data berikut:
 
 [INPUT]
 
-Alur dan aturan yang harus diterapkan:
-1. Cerita singkat di layar pembuka: seorang tokoh terjebak di puncak menara, dan pemain harus naik dengan menjawab soal.
-2. Setiap jawaban benar membuka anak tangga dan menaikkan karakter; jawaban salah membuat karakter turun satu langkah atau kehilangan satu nyawa (maksimal 3 nyawa), disertai penjelasan jawaban yang benar.
-3. Menara memiliki beberapa lantai dengan tema berbeda; tingkat kesulitan soal naik bertahap sesuai pengaturan di atas.
-4. Soal sesuai jenjang, kelas, mata pelajaran, dan topik di atas, bervariasi dan diacak.
-5. Layar akhir menampilkan hasil misi (berhasil/belum), skor, dan tombol "Main Lagi".`
+Mekanik permainan yang harus diterapkan:
+1. Seorang tokoh terjebak di puncak menara; tiap jawaban benar membuka satu anak tangga dan menaikkan karakter.
+2. Menara memiliki beberapa lantai bertema berbeda dengan kesulitan soal naik bertahap.
+3. Jawaban salah membuat karakter turun satu langkah atau kehilangan satu nyawa.
+
+Ketentuan umum:
+- Layar pembuka berisi cerita singkat dan tujuan misi dengan tokoh yang ramah anak; sertakan bar progres misi, skor, dan nyawa/energi (maksimal 3).
+- Setiap jawaban benar memajukan misi; jawaban salah mengurangi nyawa/energi atau menunda kemajuan, tetapi pemain tetap bisa melanjutkan setelah membaca penjelasan.
+- Tutup dengan cerita penutup yang menyenangkan saat misi berhasil, dan dorongan mencoba lagi bila belum berhasil.
+- Isi soal/konten harus sesuai jenjang, kelas, mata pelajaran, topik, tingkat kesulitan, dan bahan ajar di atas; bahasa mudah dipahami, tidak berulang, dan urutan serta posisi jawaban diacak setiap kali main.
+- Jika bahan ajar diberikan, jadikan itu sumber utama isi; jika tidak ada, susun isi dari topik sesuai Kurikulum Merdeka dan pastikan faktanya akurat.
+- Jawaban salah selalu diikuti jawaban yang benar beserta penjelasan singkat (1–2 kalimat) agar pemain belajar, bukan sekadar kalah.
+- Terapkan Gaya Visual, Jumlah Soal, dan Fitur Tambahan sesuai data di atas. Bila Narasi bersuara dipilih, gunakan Web Speech API berbahasa Indonesia dengan tombol aktif/nonaktif; bila Bintang, Level, atau Rapor dipilih, tampilkan sesuai deskripsinya.
+- Susun layar menjadi: pembuka (judul, petunjuk singkat, tombol Mulai) → bermain → hasil (skor, ringkasan capaian, tombol Main Lagi).
+- Tampilan responsif untuk HP dan proyektor kelas: tombol besar, teks terbaca jelas, kontras baik, dan dapat dimainkan dengan sentuhan maupun mouse/keyboard.
+- Semua aset visual dibuat sendiri lewat kode (SVG/CSS/emoji); jangan memakai gambar atau karakter berhak cipta, dan jangan memuat unsur kekerasan grafis.`
 });
