@@ -45,3 +45,6 @@ dropdown, dan kolom tambahan. Contoh ada di `data/edu racing/_kategori.js` (Tema
 ## Mengubah pilihan umum
 Semua ada di `js/config.js`: daftar jenjang/kelas/mapel, gaya visual, fitur tambahan,
 prompt & panduan tiap model AI, serta URL tombol "Buka …".
+
+## Ikon & warna media
+Ikon 3D memakai nama ikon di `_kategori.js` (`icon: 'dice'`; pilihan: dice, gamepad, map, flag, bulb, star). Warna otomatis berbeda tiap media; untuk memilih sendiri tambahkan `color: 0` sampai `7`.
