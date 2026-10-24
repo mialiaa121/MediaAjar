@@ -1,15 +1,25 @@
 MediaAjar.register({
   title: 'Kualifikasi (Time Trial Solo)',
-  description: 'Satu pembalap melawan waktu. Jawaban benar menambah kecepatan.',
+  description: 'Satu pembalap melawan waktu.',
   order: 2,
-  prompt: `Kamu adalah pengembang game edukasi sekaligus desainer pembelajaran yang berpengalaman. Buatkan game balapan edukasi babak KUALIFIKASI (time trial solo) berdasarkan data berikut:
+  prompt: `Kamu adalah pengembang game edukasi sekaligus desainer pembelajaran yang berpengalaman. Buatkan game balapan edukasi untuk babak "Kualifikasi (Time Trial Solo)" berdasarkan data berikut:
 
 [INPUT]
 
-Aturan permainan yang harus diterapkan:
-1. Satu pemain melaju sendirian di lintasan sesuai Tema Balapan di atas dan berlomba melawan waktu.
-2. Soal muncul bergantian. Jawaban benar membuat kendaraan/pembalap melaju lebih cepat (boost); jawaban salah memperlambat sebentar dan menampilkan jawaban yang benar beserta penjelasan singkat.
-3. Ada penghitung waktu, jarak tempuh, dan indikator kecepatan yang jelas dan mudah dibaca.
-4. Soal sesuai jenjang, kelas, mata pelajaran, topik, dan tingkat kesulitan di atas, diacak, tidak berulang.
-5. Di garis finis tampilkan waktu akhir, akurasi jawaban, dan posisi grid start (mis. Pole Position, P2, P3) berdasarkan hasil, lengkap dengan tombol "Coba Lagi".`
+Mekanik permainan yang harus diterapkan:
+1. Satu pemain melaju sendirian di lintasan dan berlomba melawan waktu.
+2. Soal muncul bergantian; jawaban benar memberi boost, jawaban salah memperlambat sebentar.
+3. Tampilkan penghitung waktu, jarak tempuh, dan indikator kecepatan yang jelas.
+4. Di garis finis tampilkan waktu akhir, akurasi jawaban, dan posisi grid start (Pole Position, P2, P3, dst.) beserta tombol Coba Lagi.
+
+Ketentuan umum:
+- Seluruh visual, efek suara, dan istilah (kendaraan/pembalap, lintasan, finis) mengikuti Tema Balapan yang dipilih di atas.
+- Jawaban benar membuat pembalap melaju lebih cepat; jawaban salah memperlambat sebentar dan tidak pernah membuat pemain tersingkir.
+- Isi soal/konten harus sesuai jenjang, kelas, mata pelajaran, topik, tingkat kesulitan, dan bahan ajar di atas; bahasa mudah dipahami, tidak berulang, dan urutan serta posisi jawaban diacak setiap kali main.
+- Jika bahan ajar diberikan, jadikan itu sumber utama isi; jika tidak ada, susun isi dari topik sesuai Kurikulum Merdeka dan pastikan faktanya akurat.
+- Jawaban salah selalu diikuti jawaban yang benar beserta penjelasan singkat (1–2 kalimat) agar pemain belajar, bukan sekadar kalah.
+- Terapkan Gaya Visual, Jumlah Soal, dan Fitur Tambahan sesuai data di atas. Bila Narasi bersuara dipilih, gunakan Web Speech API berbahasa Indonesia dengan tombol aktif/nonaktif; bila Bintang, Level, atau Rapor dipilih, tampilkan sesuai deskripsinya.
+- Susun layar menjadi: pembuka (judul, petunjuk singkat, tombol Mulai) → bermain → hasil (skor, ringkasan capaian, tombol Main Lagi).
+- Tampilan responsif untuk HP dan proyektor kelas: tombol besar, teks terbaca jelas, kontras baik, dan dapat dimainkan dengan sentuhan maupun mouse/keyboard.
+- Semua aset visual dibuat sendiri lewat kode (SVG/CSS/emoji); jangan memakai gambar atau karakter berhak cipta, dan jangan memuat unsur kekerasan grafis.`
 });
